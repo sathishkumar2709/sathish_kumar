@@ -3,10 +3,10 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Product Details</title>
+    <title>Items Details</title>
 </head>
 <body>
-    <h2>Product Details</h2>
+    <h2>Items Details</h2>
     <table border="1">
         <tr>
             <th>ID</th>
@@ -14,11 +14,11 @@
             <th>Price</th>
         </tr>
         <tr>
-            <td th:text="${product.id}"></td>
-            <td th:text="${product.name}"></td>
-            <td th:text="${product.price}"></td>
+            <td th:text="${item.id}"></td>
+            <td th:text="${item.name}"></td>
+            <td th:text="${item.price}"></td>
         </tr>
     </table>
-    <a th:href="@{/products}" style="text-decoration: none;">Back to Product List</a>
+    <a th:href="@{/items}" style="text-decoration: none;">Back to Items List</a>
 </body>
 </html>
