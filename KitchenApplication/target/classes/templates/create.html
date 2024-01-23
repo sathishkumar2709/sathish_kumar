@@ -3,11 +3,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Create Product</title>
+    <title>Create Items</title>
 </head>
 <body>
-    <h2>Create Product</h2>
-    <form action="/products/create" method="post" th:object="${product}">
+    <h2>Create Item</h2>
+    <form action="/items/create" method="post" th:object="${item}">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" th:field="*{name}" required><br>
 
@@ -16,6 +16,6 @@
 
         <button type="submit">Create</button>
     </form>
-    <a th:href="@{/products}" style="text-decoration: none;">Back to Product List</a>
+    <a th:href="@{/items}" style="text-decoration: none;">Back to Items List</a>
 </body>
 </html>
